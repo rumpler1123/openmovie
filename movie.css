@@ -1,0 +1,55 @@
+
+.jumbotron{
+  background-color: #343A40;
+  color: white;
+  margin: 30px;
+}
+
+.well{
+  margin: 10px;
+}
+.boxShadow{
+  box-shadow: 0 5px 6px 0 rgba(0, 0, 0, .3);
+  position: relative;
+ 
+}
+
+#detailsBtn{
+  position: absolute;
+  color:white;
+  background-color: black;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0px;
+  width: 100%;
+  padding: 10px 0px;
+  margin: 0px;
+  text-decoration: none;
+}
+
+#detailsBtn:hover{
+  background-color: #5e5e5e;
+}
+#movies .col-md-3 img{
+  height: 400px;
+}
+
+#movies .col-md-3 .well{
+  height: 500px;
+}
+
+#movies img, #movie img{
+  width: 100%;
+}
+
+@media(min-width: 960px){
+  #movies .col-md-3 .well{
+    height: 400px;
+    border: 1px solid rgb(204, 204, 204);
+    margin-bottom: 30px;
+  }
+
+  #movies .col-md-3 img{
+    height: 300px;
+  }
+}
