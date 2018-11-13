@@ -70,8 +70,8 @@
             <h3>Plot: </h3>
             ${response.Plot}
             <hr>
-            <a href="http://imdb.com/title/${response.imdbID}" target="_blank" class="btn btn-warning">Go IMDB</a>
-            <a href="index.html" class="btn btn-primary">Go Back to Search</a>
+            <a href="http://imdb.com/title/${response.imdbID}" target="_blank" class="btn btn-warning">Go to IMDB</a>
+            <a href="index.html" class="btn btn-primary">Go back to search</a>
           </div>
         </div> 
         `
