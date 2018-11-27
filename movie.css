@@ -1,17 +1,23 @@
-
+* {
+  box-sizing: border-box;
+}
 .jumbotron{
   background-color: #343A40;
   color: white;
   margin: 30px;
+  text-align: center;
 }
-
 .well{
   margin: 10px;
 }
+
 .boxShadow{
   box-shadow: 0 5px 6px 0 rgba(0, 0, 0, .3);
   position: relative;
- 
+}
+
+.pagination{
+ display: none;
 }
 
 #detailsBtn{
@@ -30,6 +36,7 @@
 #detailsBtn:hover{
   background-color: #5e5e5e;
 }
+
 #movies .col-md-3 img{
   height: 400px;
 }
@@ -42,6 +49,8 @@
   width: 100%;
 }
 
+
+
 @media(min-width: 960px){
   #movies .col-md-3 .well{
     height: 400px;
@@ -52,4 +61,15 @@
   #movies .col-md-3 img{
     height: 300px;
   }
+}
+
+@media (min-width: 767px) and (max-width: 992px){
+  #movies .col-md-3 .well{
+    height: 250px;
+  }
+  #movies .col-md-3 img{
+    height: 150px;
+     
+  }
+
 }

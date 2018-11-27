@@ -4,11 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="movie.css">
-  <title>Filmkereső</title>
+  <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+  <title>Movie Search</title>
 </head>
 <body>
+
+  <!-- Navbar -->
+
   <nav class="navbar navbar-dark bg-dark">
     <div class="container">
       <div class="navbar-header">
@@ -17,18 +22,39 @@
     </div>
   </nav>
 
+  <!-- Search Section -->
+
   <div class="container">
     <div class="jumbotron">
       <h3 class="text-center">Search For Any Movie</h3>
-      <form onsubmit="" id="movie-form" >
+      <form id="movie-form" >
           <input class="form-control" type="text" name="search_movie" id="movie-title" placeholder="search movie...">
+          <button type="submit" class="btn btn-info mt-3">Search <i class="fas fa-search"></i></button>
+      </form>
     </div>
   </div>
 
+  <!-- Filmbox Section -->
+
   <div class="container">
-    <div class="row" id="movies"></div>
+    <div class="row" id="movies">
+    </div>
   </div>
 
+
+   <!-- Pagination -->
+  <div class="container">
+   <ul id="page" class="pagination justify-content-center">
+      <li id="first" class="page-item"><a id="firstPage" class="page-link" href="#" > First page </a></li>
+      <li id="prev" class="page-item"><a id="prev-link" class="page-link" href="#" > Prev </a></li>
+      <li class="page-item"><a id="pageSpan" class="page-link text-primary"></a></li>
+      <li id="next" class="page-item"><a id="next-link" class="page-link" href="#" >Next </a></li>
+      <li id="last" class="page-item"><a id="lastPage" class="page-link" href="#" >Last page </a></li> 
+   </ul>
+  </div>
+
+
+  <!-- JS files -->
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
